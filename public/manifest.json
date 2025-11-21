@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "All-in-One AI",
+  "version": "1.0",
+  "description": "Query ChatGPT, Gemini, Claude, Kimi, Grok, and DeepSeek simultaneously.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*",
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.anthropic.com/*",
+    "https://api.moonshot.ai/*",
+    "https://api.x.ai/*",
+    "https://api.deepseek.com/*"
+  ],
+  "action": {
+    "default_title": "Open All-in-One"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
